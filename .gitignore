@@ -23,3 +23,6 @@
 #clion temp and main proj files
 cmake-build-debug
 .idea
+
+# Cmake user conf
+*txt.user
