@@ -69,6 +69,7 @@ void ClientStatus::Connect()
         {
             // Every connect should make new tcp client, and deleted on disconnection
             _tpc_client_ptr = std::make_unique<TcpClient>(_ip.toStdString(), _port.toStdString(), random_data_handler);
+            _tpc_client_ptr->Start();
         }
         catch (const std::runtime_error& re)
         {
@@ -84,7 +85,6 @@ void ClientStatus::Connect()
         connect(_tpc_client_ptr.get(), &TcpClient::StatusChanged, this, &ClientStatus::SetClientStatusColor);
     }
 
-    _tpc_client_ptr->Start();
     ui->connect_button->setEnabled(false);
     ui->disconnect_button->setEnabled(true);
 }
