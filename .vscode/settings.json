@@ -1,0 +1,16 @@
+{
+    "cmake.sourceDirectory": "/home/inal/work/ClientServer/Server",
+    "C_Cpp.intelliSenseEngine": "default",
+    "files.associations": {
+        "**/boost/**": "cpp",
+        "**/c++/**": "cpp",
+        "*.tcc": "cpp",
+        "*.ipp": "cpp",
+        "*.hpp": "cpp",
+        "*.cpp": "cpp",
+        "*.h": "cpp",
+        "algorithm": "cpp",
+        "complex": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "enabled"
+}

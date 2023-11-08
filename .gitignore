@@ -1,0 +1,25 @@
+**/\!*
+**/Tickets/*
+**/obj/*
+**/bin/*
+**/lib/*
+
+# installer
+/external/
+/temp/
+
+# VS support
+/.vs
+**/.vs/*
+
+# out dirrectories
+**/build*/*
+
+# vim
+*~
+*.swo
+*.swp
+
+#clion temp and main proj files
+cmake-build-debug
+.idea
