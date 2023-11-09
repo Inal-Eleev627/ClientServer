@@ -35,8 +35,11 @@ private slots:
 private:
     // number of clients depends on hardware concurrency
     const std::uint32_t _jobs = std::thread::hardware_concurrency();
+
+    // TODO: Replace it with TableView.
     QGridLayout _grid_layout_clients;
 
+    // TODO: Make TableModel and Delegate for ClientCell.
     using rowClients_t = std::array<ClientCell, 5>;
     using clients2dim_t = std::vector<rowClients_t>;
 
